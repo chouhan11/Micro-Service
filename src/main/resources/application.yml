@@ -1,0 +1,18 @@
+server:
+  port: 1111
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    initialization-mode: always
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: null
+  application:
+    name: Currency-Exchange-Cost-API
+  zipkin:
+    enabled: true
+      
